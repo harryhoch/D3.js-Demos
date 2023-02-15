@@ -2,10 +2,10 @@
 <html>
   <head>
     <title>ThemeRiver</title>
-    <link rel="stylesheet" href="/static/css/themeriver.css"> 
-    <script src="/static/js/d3.min.js"></script>
-    <script src="/static/js/barchart-in-themeriver-world.js"></script>
-    <script src="/static/js/color-strategies.js"></script>
+    <link rel="stylesheet" href="./css/themeriver.css"> 
+    <script src="./js/d3.min.js"></script>
+    <script src="./js/barchart-in-themeriver-world.js"></script>
+    <script src="./js/color-strategies.js"></script>
   </head>
   <body style="text-align: center">
     <svg width="1650" height="920" id="mainsvg" class="svgs" style="background-color: #ffffff;"></svg>
@@ -233,7 +233,7 @@
             return prestack
         }
 
-        d3.csv(`./static/data/${data_url}.csv`).then(function(data){
+        d3.csv(`./data/${data_url}.csv`).then(function(data){
             data = data.filter(datum => {
                 var delete_dates = ['2020/2/2','2020/2/3','2020/2/4','2020/2/5','2020/2/6','2020/2/7','2020/2/8','2020/2/9','2020/2/10','2020/2/11','2020/2/12','2020/2/13'];
                 var flag = true;

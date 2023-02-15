@@ -2,9 +2,9 @@
 <html>
   <head>
     <title>ThemeRiver</title>
-    <link rel="stylesheet" href="/static/css/themeriver.css"> 
-    <script src="/static/js/d3.min.js"></script>
-    <script src="/static/js/barchart-in-themeriver.js"></script>
+    <link rel="stylesheet" href="./css/themeriver.css"> 
+    <script src="./js/d3.min.js"></script>
+    <script src="./js/barchart-in-themeriver.js"></script>
   </head>
   <body style="text-align: center">
     <svg width="1650" height="920" id="mainsvg" class="svgs" style="background-color: #ffffff;"></svg>
@@ -265,7 +265,7 @@
             return prestack
         }
 
-        d3.csv('./static/data/province.csv').then(function(data){
+        d3.csv('./data/province.csv').then(function(data){
             data.forEach(datum => {
                 // pre-process the data; 
                 datum['确诊人数'] = +(datum['确诊人数']);
